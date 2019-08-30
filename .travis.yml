@@ -8,5 +8,5 @@ services:
 before_script: pip install docker-compose
 
 script:
-    - docker-compose run api sh -c "python manage.py test && flake8"
+    - docker-compose run --rm api sh -c "python manage.py test && flake8"
 
